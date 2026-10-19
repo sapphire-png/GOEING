@@ -30,7 +30,7 @@ class WelcomeScreen extends StatelessWidget {
                 ClipRRect(
                   borderRadius: BorderRadius.circular(12),
                   child: Image.asset(
-                    'assets/images/people-running-bus-background-with-bus-stop-hurry-symbols-isometric-illustration_1284-62222 1.png', // Sesuaikan nama file gambar ilustrasimu
+                    'assets/images/people-running-bus-background-with-bus-stop-hurry-symbols-isometric-illustration_1284-62222 1.png',
                     width: double.infinity,
                     height: 220,
                     fit: BoxFit.cover,

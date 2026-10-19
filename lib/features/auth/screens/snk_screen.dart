@@ -15,7 +15,7 @@ class _SnkScreenState extends State<SnkScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFFF6F8FA), // Background sedikit keabuan bersih
+      backgroundColor: const Color(0xFFF6F8FA),
       body: SafeArea(
         child: SingleChildScrollView(
           padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 20.0),

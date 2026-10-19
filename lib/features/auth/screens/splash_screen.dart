@@ -9,12 +9,12 @@ class SplashScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.white,
       body: SafeArea(
-        child: Center( // Memastikan seluruh konten berada persis di tengah horizontal
+        child: Center(
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 24.0, vertical: 50.0),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.center, // Memaksa anak widget sejajar di tengah
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 const Spacer(),
                 
@@ -66,4 +66,3 @@ class SplashScreen extends StatelessWidget {
     );
   }
 }
-//aku ngeleg,aku ngeleg

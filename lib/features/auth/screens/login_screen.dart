@@ -59,7 +59,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
                 child: Column(
                   children: [
-                    // Judul LOGIN
+                    // LOGIN
                     const Text(
                       'LOGIN',
                       style: TextStyle(
