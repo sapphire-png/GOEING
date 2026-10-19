@@ -29,27 +29,25 @@ class _SignupScreenState extends State<SignupScreen> {
             children: [
               // Tombol Kembali & Logo Utama
               Row(
-                children: [
-                  IconButton(
-                    onPressed: () {
-                      Navigator.pop(context); // Kembali ke halaman awal
-                    },
-                    icon: const Icon(Icons.arrow_back, color: Color(0xFF5188B1)),
-                    padding: EdgeInsets.zero,
-                    constraints: const BoxConstraints(),
-                  ),
-                  const SizedBox(width: 15),
-                  Expanded(
+              children: [
+                IconButton(
+                  onPressed: () => Navigator.pop(context),
+                  icon: const Icon(Icons.arrow_back, color: Color(0xFF5188B1)),
+                  padding: EdgeInsets.zero,
+                  constraints: const BoxConstraints(),
+                ),
+                Expanded(
+                  child: Center( // <-- Memastikan logo diposisikan persis di tengah
                     child: Image.asset(
                       'assets/images/logo.png',
                       height: 35,
-                      alignment: Alignment.centerLeft,
                       fit: BoxFit.contain,
                     ),
                   ),
-                ],
-              ),
-              const SizedBox(height: 30),
+                ),
+                const SizedBox(width: 24), // Penyeimbang lebar IconButton di kiri agar benar-benar center simetris
+              ],
+            ),
 
               // Card Container Form SIGNUP
               Container(

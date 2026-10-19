@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../home/screens/home_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -29,25 +30,23 @@ class _LoginScreenState extends State<LoginScreen> {
               Row(
                 children: [
                   IconButton(
-                    onPressed: () {
-                      Navigator.pop(context); // Kembali ke halaman sebelumnya
-                    },
+                    onPressed: () => Navigator.pop(context),
                     icon: const Icon(Icons.arrow_back, color: Color(0xFF5188B1)),
                     padding: EdgeInsets.zero,
                     constraints: const BoxConstraints(),
                   ),
-                  const SizedBox(width: 15),
                   Expanded(
-                    child: Image.asset(
-                      'assets/images/logo.png',
-                      height: 35,
-                      alignment: Alignment.centerLeft,
-                      fit: BoxFit.contain,
+                    child: Center( // <-- Memastikan logo diposisikan persis di tengah
+                      child: Image.asset(
+                        'assets/images/logo.png',
+                        height: 35,
+                        fit: BoxFit.contain,
+                      ),
                     ),
                   ),
+                  const SizedBox(width: 24), // Penyeimbang lebar IconButton di kiri agar benar-benar center simetris
                 ],
               ),
-              const SizedBox(height: 40),
 
               // Card Container untuk Form Login
               Container(
@@ -157,7 +156,10 @@ class _LoginScreenState extends State<LoginScreen> {
                       height: 45,
                       child: ElevatedButton(
                         onPressed: () {
-                          // TODO: Validasi login atau arahkan ke Halaman Home
+                          Navigator.pushReplacement(
+                          context,
+                          MaterialPageRoute(builder: (context) => const HomeScreen()),
+                        );
                         },
                         style: ElevatedButton.styleFrom(
                           backgroundColor: const Color(0xFF5188B1),
