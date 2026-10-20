@@ -19,7 +19,7 @@ class _SnkScreenState extends State<SnkScreen> {
       body: SafeArea(
         child: SingleChildScrollView(
           padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 20.0),
-          child: Column(
+          child: Column(     
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               // Logo Utama
@@ -332,4 +332,4 @@ class _SnkScreenState extends State<SnkScreen> {
       ),
     );
   }
-}
+} 
